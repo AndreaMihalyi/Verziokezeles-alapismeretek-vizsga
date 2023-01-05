@@ -68,3 +68,45 @@ Három mód: - Fájlok hozzáadása a Staging area-hoz egyesével:
 (Tévesen Staging area-hoz hozzáadott fájlok eltávolítása:
 $ git rm --cached fájlnév.fájlkiterjesztés megadása)
 $ git add .
+3. Státusz lekérése: Tájékoztat az utoljára létrehozott/módosított fájlokról/mappákról
+$ git status
+On branch console
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        modified:   app.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+4. App.js fájl módosítása: Ha az oldal betöltődött, akkor a consolba írjuk ki „Az oldal sikeresen betöltődött.”
+-> Verzió mentése
+$ git commit -m "Módosítás az app.js fájlban létrehozva."
+[console 3dd1dc9] Módosítás az app.js fájlban létrehozva.
+ 2 files changed, 20 insertions(+), 10 deletions(-)
+VI. CSS fájlban a weboldal háttérszínének módosítása:
+CSS fájl módosítása -> Megjelenik az M-Modified jelzés
+1. $ clear - Törlés, hogy a terminál üres legyen
+2. Státusz lekérése: Tájékoztat az utoljára létrehozott/módosított fájlokról/mappákról
+$ git status
+On branch console
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2. Fájlok hozzáadása a Staging area-hoz: Ezek a fájlok lesznek követve verziókövetéssel
+Három mód: - Fájlok hozzáadása a Staging area-hoz egyesével:
+            $ git add fájlnév.fájlkiterjesztés megadása
+           - Fájlok hozzáadá sa a Staging area-hoz egyesével:
+            $ git add *.fájlkiterjesztés megadása
+           - Valamennyi fájl hozzáadása a Staging area-hoz:
+            $ git add.
+(Tévesen Staging area-hoz hozzáadott fájlok eltávolítása:
+$ git rm --cached fájlnév.fájlkiterjesztés megadása)
+$ git add .
+3. Státusz lekérése: Tájékoztat az utoljára létrehozott/módosított fájlokról/mappákról
+$ git status
