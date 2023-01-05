@@ -1,0 +1,8 @@
+#.txt fájlok ignorálása:
+*.txt
+#.doc fájlok ignorálása:
+*.doc
+#.docx fájlok ignorálása:
+*.docx
+#.pdf fájlok ignorálása:
+*.pdf
